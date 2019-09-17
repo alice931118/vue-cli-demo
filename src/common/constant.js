@@ -4,15 +4,20 @@ const constant = {};
 constant.url = urlParams;
 constant.env = process.env;
 
-// cookie信息
+// cookie
 constant.COOKIE = {}
 constant.COOKIE.KEY_TOKEN = 'okotc_token'
+constant.COOKIE.KEY_LANGUAGE = 'okotc_language'
 
-// 接口请求携带信息
+// seesion
+constant.SEESION = {}
+constant.SEESION.KEY_USERINFO = 'okotc__userInfo'
+
+// request information
 constant.HTTP = {};
 constant.HTTP.KEY_TOKEN = 'okotc_token'
 
-// 接口返回信息
+// response information
 constant.RESP_CODE = {};
 constant.RESP_CODE.TOKEN_EXPIRE = 1005;
 constant.RESP_CODE.STATUS_SUCCESS = 0;
