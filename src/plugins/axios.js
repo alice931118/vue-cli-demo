@@ -18,7 +18,7 @@ let config = {
 };
 
 const _axios = axios.create(config);
-let _token = utils.getCookieKey(constant.COOKIE.KEY_TOKEN)
+let _token = utils.getCookie(constant.COOKIE.KEY_TOKEN)
 let VueThis = Vue.prototype;
 
 // 添加请求拦截器

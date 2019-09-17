@@ -17,10 +17,16 @@ utils.getAccount = function(that) {
 }
 
 
-utils.getCookieKey = (key) => {
+utils.getCookie = (key) => {
     if (Cookies.get(key) && Cookies.get(key) != 'undefined') {
         return Cookies.get(key);
     }
+}
+
+utils.setCookie = (cookieName, cookieValue, cookieHours) => {
+    var d = new Date();
+    d.setHours(d.getHours() + cookieHours);
+    Cookies.set(cookieName, cookieValue, { "expires": d.toGMTString() }) //, path: ''
 }
 
 

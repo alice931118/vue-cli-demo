@@ -7,11 +7,11 @@ constant.env = process.env;
 // cookie
 constant.COOKIE = {}
 constant.COOKIE.KEY_TOKEN = 'okotc_token'
-constant.COOKIE.KEY_LANGUAGE = 'okotc_language'
+constant.COOKIE.KEY_LANGUAGE = 'okotc_locale'
 
 // seesion
 constant.SEESION = {}
-constant.SEESION.KEY_USERINFO = 'okotc__userInfo'
+constant.SEESION.KEY_USERINFO = 'okotc_userInfo'
 
 // request information
 constant.HTTP = {};
